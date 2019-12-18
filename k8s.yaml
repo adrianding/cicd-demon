@@ -16,6 +16,3 @@ spec:
       - image: registry-vpc.cn-shanghai.aliyuncs.com/micateam_hub/cicd-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: cicd-demo
-        env:
-        - name: branch
-          value: <BRANCH_NAME>
