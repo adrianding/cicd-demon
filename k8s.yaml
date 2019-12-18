@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: jenkins-demo
+  name: cicd-demo
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: jenkins-demo
+      app: cicd-demo
   template:
     metadata:
       labels:
-        app: jenkins-demo
+        app: cicd-demo
     spec:
       containers:
-      - image: cnych/jenkins-demo:<BUILD_TAG>
+      - image: adrianding/cicd-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
-        name: jenkins-demo
+        name: cicd-demo
         env:
         - name: branch
           value: <BRANCH_NAME>
