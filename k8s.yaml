@@ -13,7 +13,7 @@ spec:
         app: cicd-demo
     spec:
       containers:
-      - image: adrianding/cicd-demo:<BUILD_TAG>
+      - image: registry-vpc.cn-shanghai.aliyuncs.com/micateam_hub/cicd-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: cicd-demo
         env:
