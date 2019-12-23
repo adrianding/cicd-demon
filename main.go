@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, Kubernetes！I'm from Jenkins too！")
+	fmt.Println("Hello, Kubernetes！I'm from Jenkins！")
 }
